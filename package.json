@@ -1,9 +1,9 @@
 {
-  "name": "npm-test",
-  "version": "0.0.1",
+  "name": "@omarhassan219/npm-test",
+  "version": "0.0.5",
   "description": "react component library",
   "scripts": {
-"rollup" : "rollup -c"
+    "rollup": "rollup -c"
   },
   "author": "omar",
   "license": "ISC",
@@ -17,8 +17,20 @@
     "rollup-plugin-dts": "^6.1.0",
     "typescript": "^5.4.5"
   },
-  "main":"dist/cjs/index.ts",
-  "module":"dist/esm/index.ts",
-  "files":["dist"],
-  "types":"dist/index.d.ts"
+  "main": "dist/cjs/index.ts",
+  "module": "dist/esm/index.ts",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/omarhassan219"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.16",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
 }

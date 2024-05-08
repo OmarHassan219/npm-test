@@ -1,12 +1,14 @@
-import React from 'react'
-
-interface ButtonProps{
-    label: string
+import React from 'react';
+import './Button.css'
+interface ButtonProps {
+    label: string;
+    backgroundColor: string;
 }
-const Button = ({label} : ButtonProps) => {
+
+const Button: React.FC<ButtonProps> = ({ label, backgroundColor }: ButtonProps) => {
   return (
-    <button>{label}</button>
-  )
-}
+    <button style={{ backgroundColor: backgroundColor }}>{label}</button>
+  );
+};
 
-export default Button
+export default Button;
