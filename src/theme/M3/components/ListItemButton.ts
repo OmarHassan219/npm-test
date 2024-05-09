@@ -1,5 +1,5 @@
 import { Theme, ComponentsProps, ComponentsOverrides, ComponentsVariants } from "@mui/material";
-import { StateLayer, getStateLayerColor } from "../..";
+import getStateLayerColor, { StateLayer } from "../utils/getStayeLayerColor";
 
 interface M3ListItemButton {
     MuiListItemButton: {
@@ -9,7 +9,7 @@ interface M3ListItemButton {
     }
 };
 
-export const getListItemButton = (theme: Theme): M3ListItemButton => {
+ const getListItemButton = (theme: Theme): M3ListItemButton => {
     const { palette } = theme;
     return {
         MuiListItemButton: {
@@ -53,3 +53,6 @@ export const getListItemButton = (theme: Theme): M3ListItemButton => {
         }
     }
 }
+
+
+export default getListItemButton

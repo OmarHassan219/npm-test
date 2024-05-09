@@ -8,7 +8,7 @@ interface M3Switch {
     }
 };
 
-export const getSwitch = (theme: Theme): M3Switch => {
+ const getSwitch = (theme: Theme): M3Switch => {
     const { palette } = theme;
     return {
         MuiSwitch: {
@@ -81,3 +81,6 @@ export const getSwitch = (theme: Theme): M3Switch => {
         }
     }
 }
+
+
+export default getSwitch

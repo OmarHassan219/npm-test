@@ -1,1 +1,1 @@
-export {default} from './BadgeView'
+export {default} from './BadgedView'

@@ -12,7 +12,7 @@ interface M3AppBar {
     }
 }
 
-export const getAppBar = (theme: Theme): M3AppBar => {
+ const getAppBar = (theme: Theme): M3AppBar => {
     const { palette } = theme;
     return {
         MuiAppBar: {
@@ -33,3 +33,5 @@ export const getAppBar = (theme: Theme): M3AppBar => {
         }
     };
 }
+
+export default getAppBar

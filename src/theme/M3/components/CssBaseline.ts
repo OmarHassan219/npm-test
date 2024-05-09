@@ -8,7 +8,7 @@ interface M3CssBaseline {
     }
 };
 
-export const getCssBaseline = (_theme: Theme): M3CssBaseline => {
+ const getCssBaseline = (_theme: Theme): M3CssBaseline => {
     return {
         MuiCssBaseline: {
             defaultProps: {
@@ -23,3 +23,5 @@ export const getCssBaseline = (_theme: Theme): M3CssBaseline => {
         }
     }
 }
+
+export default getCssBaseline

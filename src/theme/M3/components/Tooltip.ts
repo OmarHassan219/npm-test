@@ -8,7 +8,7 @@ interface M3Tooltip {
     }
 };
 
-export const getTooltip = (theme: Theme): M3Tooltip => {
+ const getTooltip = (theme: Theme): M3Tooltip => {
     const { palette } = theme;
     return {
         MuiTooltip: {
@@ -21,3 +21,5 @@ export const getTooltip = (theme: Theme): M3Tooltip => {
         }
     }
 }
+
+export default getTooltip

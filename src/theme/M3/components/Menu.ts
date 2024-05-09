@@ -12,7 +12,7 @@ interface M3Menu {
     }
 }
 
-export const getMenu = (theme: Theme): M3Menu => {
+ const getMenu = (theme: Theme): M3Menu => {
     const { palette } = theme;
     return {
         MuiMenu: {
@@ -29,3 +29,5 @@ export const getMenu = (theme: Theme): M3Menu => {
         }
     };
 }
+
+export default getMenu

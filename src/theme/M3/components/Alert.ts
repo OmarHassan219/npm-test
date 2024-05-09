@@ -8,7 +8,7 @@ interface M3Alert {
     }
 };
 
-export const getAlert = (theme: Theme): M3Alert => {
+ const getAlert = (theme: Theme): M3Alert => {
     const { palette } = theme;
     return {
         MuiAlert: {
@@ -69,3 +69,5 @@ export const getAlert = (theme: Theme): M3Alert => {
         }
     }
 }
+
+export default getAlert

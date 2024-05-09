@@ -7,7 +7,7 @@ export enum StateLayer {
     Drag = 0.16,
 }
 
-export const getStateLayerColor = (state: StateLayer, containerColor: string, contentColor: string) => {
+ const getStateLayerColor = (state: StateLayer, containerColor: string, contentColor: string) => {
     return hexFromArgb(
         Blend.cam16Ucs(
             argbFromHex(containerColor),
@@ -16,3 +16,5 @@ export const getStateLayerColor = (state: StateLayer, containerColor: string, co
         )
     );
 }
+
+export default getStateLayerColor

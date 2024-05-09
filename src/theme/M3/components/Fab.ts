@@ -1,5 +1,5 @@
 import { Theme, ComponentsProps, ComponentsOverrides, ComponentsVariants } from "@mui/material";
-import { StateLayer, getStateLayerColor } from "../..";
+import getStateLayerColor, { StateLayer } from "../utils/getStayeLayerColor";
 
 interface M3Fab {
     MuiFab: {
@@ -25,7 +25,7 @@ declare module '@mui/material/Fab' {
     }
 }
 
-export const getFab = (theme: Theme): M3Fab => {
+ const getFab = (theme: Theme): M3Fab => {
     const { palette } = theme;
     return {
         MuiFab: {
@@ -124,3 +124,6 @@ export const getFab = (theme: Theme): M3Fab => {
         }
     }
 }
+
+
+export default getFab

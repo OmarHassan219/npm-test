@@ -30,4 +30,4 @@ const AlertView = () => {
 };
 
 
-export const AlertView
+export default AlertView

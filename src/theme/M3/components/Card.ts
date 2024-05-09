@@ -3,8 +3,8 @@ import {
     Theme,
     ComponentsProps, ComponentsOverrides, ComponentsVariants
 } from '@mui/material';
-import { StateLayer, getStateLayerColor } from '../..';
 import { alpha } from '@mui/material';
+import getStateLayerColor, { StateLayer } from '../utils/getStayeLayerColor';
 
 declare module '@mui/material/Paper' {
     interface PaperPropsVariantOverrides {
@@ -20,7 +20,7 @@ interface M3Card {
     }
 }
 
-export const getCard = (theme: Theme): M3Card => {
+ const getCard = (theme: Theme): M3Card => {
     const { palette } = theme;
     return {
         MuiCard: {
@@ -125,3 +125,5 @@ export const getCard = (theme: Theme): M3Card => {
         }
     };
 }
+
+export default getCard

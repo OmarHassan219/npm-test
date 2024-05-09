@@ -3,7 +3,7 @@ import {
     Theme,
     ComponentsProps, ComponentsOverrides, ComponentsVariants, alpha
 } from '@mui/material';
-import { StateLayer, getStateLayerColor } from '../..';
+import getStateLayerColor, { StateLayer } from '../utils/getStayeLayerColor';
 
 declare module '@mui/material/Button' {
     interface ButtonPropsVariantOverrides {
@@ -27,7 +27,7 @@ interface M3Button {
         variants?: ComponentsVariants['MuiButton'];
     }
 }
-export const getButton = (theme: Theme): M3Button => {
+ const getButton = (theme: Theme): M3Button => {
     const { palette } = theme;
     return {
         MuiButton: {
@@ -169,3 +169,5 @@ export const getButton = (theme: Theme): M3Button => {
         }
     };
 }
+
+export default getButton

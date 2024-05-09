@@ -1,9 +1,9 @@
 import { useLayoutEffect, useState } from 'react';
-import { ThemeMode } from '../..';
+import { ThemeMode } from '../types';
 
 export const THEME_MODE_KEY = 'ThemeModeKey';
 
-export const useThemeMode = () => {
+ const useThemeMode = () => {
 
     const [themeMode, setThemeMode] = useState<ThemeMode>('light');
 
@@ -22,3 +22,5 @@ export const useThemeMode = () => {
 
     return [themeMode, toggleTheme, setThemeMode] as const;
 } 
+
+export default useThemeMode

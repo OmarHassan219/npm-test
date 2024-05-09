@@ -3,7 +3,7 @@ import {
     Theme,
     ComponentsProps, ComponentsOverrides, ComponentsVariants
 } from '@mui/material';
-import { StateLayer, getStateLayerColor } from '../..';
+import getStateLayerColor, { StateLayer } from '../utils/getStayeLayerColor';
 
 
 interface M3ToggleButtonGroup {
@@ -14,7 +14,7 @@ interface M3ToggleButtonGroup {
     }
 }
 
-export const getToggleButtonGroup = (theme: Theme): M3ToggleButtonGroup => {
+ const getToggleButtonGroup = (theme: Theme): M3ToggleButtonGroup => {
     const { palette } = theme;
     return {
         MuiToggleButtonGroup: {
@@ -37,3 +37,5 @@ export const getToggleButtonGroup = (theme: Theme): M3ToggleButtonGroup => {
         },
     };
 }
+
+export default getToggleButtonGroup

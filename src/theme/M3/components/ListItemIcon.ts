@@ -8,7 +8,7 @@ interface M3ListItemIcon {
     }
 };
 
-export const getListItemIcon = (_theme: Theme): M3ListItemIcon => {
+ const getListItemIcon = (_theme: Theme): M3ListItemIcon => {
     //const { palette } = theme;
     return {
         MuiListItemIcon: {
@@ -24,3 +24,5 @@ export const getListItemIcon = (_theme: Theme): M3ListItemIcon => {
         }
     }
 }
+
+export default getListItemIcon

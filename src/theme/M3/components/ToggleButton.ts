@@ -14,7 +14,7 @@ interface M3ToggleButton {
     }
 }
 
-export const getToggleButton = (theme: Theme): M3ToggleButton => {
+ const getToggleButton = (theme: Theme): M3ToggleButton => {
     const { palette } = theme;
     return {
         MuiToggleButton: {
@@ -66,3 +66,5 @@ export const getToggleButton = (theme: Theme): M3ToggleButton => {
 
     };
 }
+
+export default getToggleButton

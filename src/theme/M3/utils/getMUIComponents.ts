@@ -22,7 +22,7 @@ import {
 
 type M3Components = { components: Theme['components'] };
 
-export const getMUIComponents = (theme: Theme) => {
+ const getMUIComponents = (theme: Theme) => {
     //const { palette } = theme;
     return {
         components: {
@@ -46,3 +46,6 @@ export const getMUIComponents = (theme: Theme) => {
         }
     } as M3Components;
 };
+
+
+export default getMUIComponents

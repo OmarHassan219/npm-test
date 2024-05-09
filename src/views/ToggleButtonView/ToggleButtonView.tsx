@@ -5,6 +5,7 @@ import SettingIconOutlined from '@mui/icons-material/SettingsOutlined';
 import WindowsIcon from '@mui/icons-material/Window';
 import CheckIcon from '@mui/icons-material/Check';
 import { useState } from 'react';
+import React from 'react';
 
 
  const ToggleButtonView = () => {

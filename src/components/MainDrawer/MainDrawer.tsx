@@ -69,7 +69,7 @@ const MainDrawer: FC<DrawerProps> = (props) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem >
-                        <ListItemButton component={Link} to='/ColorSystem' selected={selectedIndex == 'ColorSystem'} onClick={() => handleListItemClick('ColorSystem')}>
+                        <ListItemButton  component={Link} to='/ColorSystem' selected={selectedIndex == 'ColorSystem'} onClick={() => handleListItemClick('ColorSystem')}>
                             <ListItemIcon>
                                 {selectedIndex == 'ColorSystem' ? <PaletteTwoToneIcon /> : <PaletteOutlinedIcon />}
                             </ListItemIcon>
@@ -77,7 +77,7 @@ const MainDrawer: FC<DrawerProps> = (props) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem >
-                        <ListItemButton component={Link} to='/About' selected={selectedIndex == 'About'} onClick={() => handleListItemClick('About')}>
+                        <ListItemButton  component={Link} to='/About' selected={selectedIndex == 'About'} onClick={() => handleListItemClick('About')}>
                             <ListItemIcon>
                                 {selectedIndex == 'About' ? <InfoIcon /> : <InfoIconOutlined />}
                             </ListItemIcon>

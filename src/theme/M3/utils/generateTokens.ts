@@ -3,7 +3,7 @@ import { ThemeMode, ThemeTokens, TonalPalette, Tone } from "../..";
 
 const getColorToken = (themeMode: ThemeMode, palette: Tone, lightLevel: number, darkLevel: number): string => palette[themeMode == 'light' ? lightLevel : darkLevel];
 
-export const generateDesignTokens = (themeMode: ThemeMode, tonalPalette: TonalPalette): ThemeTokens => {
+ const generateDesignTokens = (themeMode: ThemeMode, tonalPalette: TonalPalette): ThemeTokens => {
 
     const { primary, secondary, tertiary, neutral, neutralVariant, error } = tonalPalette;
 
@@ -110,3 +110,6 @@ export const generateDesignTokens = (themeMode: ThemeMode, tonalPalette: TonalPa
         onWarningContainer: hexFromArgb(customColors[2][themeMode].onColorContainer)
     };
 } 
+
+
+export default generateDesignTokens

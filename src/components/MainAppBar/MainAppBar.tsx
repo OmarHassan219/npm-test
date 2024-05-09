@@ -1,6 +1,5 @@
 import { FC, useContext, useState } from "react";
 import { AppBar, Avatar, Grid, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography, useScrollTrigger, useTheme } from "@mui/material";
-import { ThemeModeContext, ThemeSchemeContext } from "../../Theme";
 import { useLocation } from "react-router-dom";
 
 import MenuIcon from '@mui/icons-material/MenuTwoTone';
@@ -9,6 +8,8 @@ import DarkIcon from '@mui/icons-material/DarkModeOutlined';
 import LightIcon from '@mui/icons-material/LightModeOutlined';
 import RestartIcon from '@mui/icons-material/RefreshOutlined';
 import DownloadIcon from '@mui/icons-material/FileDownload';
+import { ThemeModeContext } from "../../theme/M3/providers/ThemeModeProvider";
+import { ThemeSchemeContext } from "../../theme/M3/providers/ThemeSchemeProvider";
 
 interface HeaderProps {
     onDrawerToggle?: () => void,

@@ -103,7 +103,7 @@ declare module '@mui/material/styles/createPalette' {
     }
 }
 
-export const getMUIPalette = (themeMode: ThemeMode, themescheme: ThemeScheme): ThemeOptions => {
+ const getMUIPalette = (themeMode: ThemeMode, themescheme: ThemeScheme): ThemeOptions => {
     const scheme = themescheme[themeMode];
     return {
         palette: {
@@ -364,3 +364,6 @@ export const getMUIPalette = (themeMode: ThemeMode, themescheme: ThemeScheme): T
         tones: themescheme.tones
     };
 }
+
+
+export default getMUIPalette

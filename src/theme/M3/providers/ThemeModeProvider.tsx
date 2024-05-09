@@ -1,5 +1,6 @@
 import { FC, createContext } from 'react';
-import { ThemeMode, useThemeMode } from '../..';
+import { useThemeMode } from '../hooks';
+import { ThemeMode } from '../types';
 
 
 export type ThemeModeContextType = {

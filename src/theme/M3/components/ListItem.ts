@@ -8,7 +8,7 @@ interface M3ListItem {
     }
 };
 
-export const getListItem = (_theme: Theme): M3ListItem => {
+ const getListItem = (_theme: Theme): M3ListItem => {
     //const { palette } = theme;
     return {
         MuiListItem: {
@@ -25,3 +25,5 @@ export const getListItem = (_theme: Theme): M3ListItem => {
         }
     }
 }
+
+export default getListItem

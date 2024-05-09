@@ -18,7 +18,7 @@ interface M3Badge {
     }
 }
 
-export const getBadge = (theme: Theme): M3Badge => {
+ const getBadge = (theme: Theme): M3Badge => {
     const { palette } = theme;
     return {
         MuiBadge: {
@@ -37,3 +37,5 @@ export const getBadge = (theme: Theme): M3Badge => {
         }
     };
 }
+
+export default getBadge

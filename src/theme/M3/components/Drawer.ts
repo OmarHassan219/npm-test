@@ -8,7 +8,7 @@ interface M3Drawer {
     }
 };
 
-export const getDrawer = (theme: Theme): M3Drawer => {
+ const getDrawer = (theme: Theme): M3Drawer => {
     const { palette } = theme;
     return {
         MuiDrawer: {
@@ -22,3 +22,5 @@ export const getDrawer = (theme: Theme): M3Drawer => {
         },
     }
 }
+
+export default getDrawer

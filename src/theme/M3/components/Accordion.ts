@@ -12,7 +12,7 @@ interface M3Accordion {
     }
 }
 
-export const getAccordion = (theme: Theme): M3Accordion => {
+ const getAccordion = (theme: Theme): M3Accordion => {
     const { palette } = theme;
     return {
         MuiAccordion: {
@@ -39,3 +39,5 @@ export const getAccordion = (theme: Theme): M3Accordion => {
         }
     };
 }
+
+export default getAccordion
